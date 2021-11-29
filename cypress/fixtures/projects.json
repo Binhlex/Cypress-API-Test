@@ -1,0 +1,18 @@
+{
+  "locationId": "7",
+  "projectName": "cy7",
+  "typeId": "1",
+  "shortDescription": "this project for cy testing",
+  "statusId": "2",
+  "longDescription": "this project for cy testing - long",
+  "startDate": "2021-06-10",
+  "endDate": "2021-09-30",
+  "technology": "Java, Maven, Testng",
+  "size": "180",
+  "clientName": "ClientABC",
+  "projectManagerId": 10655,
+  "clientIndustryId": 3,
+  "deliveryManagerId": 10744,
+  "engagementManagerId": 10726,
+  "clientDescription": "client description"
+}

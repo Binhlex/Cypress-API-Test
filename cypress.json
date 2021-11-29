@@ -1,0 +1,23 @@
+{
+  "baseUrl": "https://demoqa.com",
+  "responseTimeout": 30000,
+  "experimentalStudio": true,
+  "reporter": "mochawesome",
+    "reporterOptions":
+    {
+        "reportDir": "cypress/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true
+    },
+  "env": {
+    "userName": "binhle6",
+    "password": "Binh@123456",
+    "userId": "c1f70dca-fa15-4efe-8b5c-0f73a797599f",
+    "userToken": "placeholder",
+    "bookName": "",
+    "isbn": "9781593277574",
+    "tmsUsername": "Admin2",
+    "tmsPassword": "qp$#tGu^"
+  }
+}

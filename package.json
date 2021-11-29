@@ -1,0 +1,33 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_on_chrome": "npx cypress run --browser chrome .\\cypress\\integration\\features\\bookstore.feature",
+    "test_on_electron": "./node_modules/.bin/cypress-tags run -e TAGS=\"@regression\"",
+    "tms_test": "npx cypress run --browser electron --spec .\\cypress\\integration\\api\\tms-api\\projects-api.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "^7.5.0",
+    "cypress-cucumber-preprocessor": "^4.1.4",
+    "cypress-skip-and-only-ui": "^1.2.11",
+    "prettier": "2.3.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber_report",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "mochawesome": "^6.2.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  }
+}

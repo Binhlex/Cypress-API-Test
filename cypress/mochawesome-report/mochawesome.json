@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-14T16:23:25.084Z",
+    "end": "2021-08-14T16:23:25.337Z",
+    "duration": 253,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1b0b8da0-c7b2-421e-bfa8-939dd8d62ee9",
+      "title": "",
+      "fullFile": "cypress/integration/api/tms-api/projects-api.spec.js",
+      "file": "cypress/integration/api/tms-api/projects-api.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6da888e5-a559-4915-9a6a-034606c42e50",
+          "title": "TMS API testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new project",
+              "fullTitle": "TMS API testing Create a new project",
+              "timedOut": null,
+              "duration": 241,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var _this2 = this;\ncy.request({\n  method: 'POST',\n  url: '/api/projects',\n  headers: (0, _headersHelper.getHeaders)(true, token),\n  body: this.project\n}).then(function (res) {\n  expect(res.status).to.be.eq(200);\n  expect(res.body.location.id).to.be.eq(_this2.project.locationId);\n  expect(res.body.projectName).to.be.eq(_this2.project.projectName);\n});",
+              "err": {},
+              "uuid": "03e9a79f-7a35-4879-b7b9-455a2c4ed7f5",
+              "parentUUID": "6da888e5-a559-4915-9a6a-034606c42e50",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "03e9a79f-7a35-4879-b7b9-455a2c4ed7f5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 241,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-07-28T10:04:36.226Z",
+    "end": "2021-07-28T10:04:51.034Z",
+    "duration": 14808,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "feddfdb5-1ec9-44f5-82a1-2d18cf63639c",
+      "title": "",
+      "fullFile": "cypress/integration/ui/student-form/register-student.spec.js",
+      "file": "cypress/integration/ui/student-form/register-student.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "299040f4-78f3-48ed-9f6d-9584399da230",
+          "title": "Register Student",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register a student successfully",
+              "fullTitle": "Register Student Register a student successfully",
+              "timedOut": null,
+              "duration": 4524,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/automation-practice-form');\nstudentRegisterPage.gettxtFirstName().type(this.student.firstname).should('have.value', this.student.firstname);\nstudentRegisterPage.gettxtLastName().type(this.student.lastname).should('have.value', this.student.lastname);\nstudentRegisterPage.gettxtEmail().type(this.student.email).should('have.value', this.student.email);\nstudentRegisterPage.getrdoMale().click();\nstudentRegisterPage.gettxtMobile().type(this.student.phone);\nstudentRegisterPage.getbntSubmit().click(); //assert information\ncy.get('#example-modal-sizes-title-lg').should('contain', 'Thanks for submitting the form');\ncy.get('tbody > :nth-child(1) > :nth-child(2)').should('contain', this.student.firstname + ' ' + this.student.lastname);\ncy.get('tbody > :nth-child(2) > :nth-child(2)').should('contain', this.student.email);\ncy.get('tbody > :nth-child(3) > :nth-child(2)').should('contain', this.student.gender);\ncy.get('tbody > :nth-child(4) > :nth-child(2)').should('contain', this.student.phone);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<button id=\"closeLargeModal\" type=\"button\" class=\"btn btn-primary\">Close</button>`\n\nThis element `<button#closeLargeModal.btn.btn-primary>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<div id=\"adplus-anchor\" data-google-query-id=\"CPf3l-vBhfICFXGfSwUdAHEHoA\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Register Student`",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<button id=\"closeLargeModal\" type=\"button\" class=\"btn btn-primary\">Close</button>`\n\nThis element `<button#closeLargeModal.btn.btn-primary>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<div id=\"adplus-anchor\" data-google-query-id=\"CPf3l-vBhfICFXGfSwUdAHEHoA\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Register Student`\n    at $Cy.ensureVisibility (https://demoqa.com/__cypress/runner/cypress_runner.js:142412:24)\n    at runAllChecks (https://demoqa.com/__cypress/runner/cypress_runner.js:131087:14)\n    at retryActionability (https://demoqa.com/__cypress/runner/cypress_runner.js:131141:16)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Function.Promise.attempt.Promise.try (https://demoqa.com/__cypress/runner/cypress_runner.js:8072:29)\n    at tryFn (https://demoqa.com/__cypress/runner/cypress_runner.js:147090:21)\n    at whenStable (https://demoqa.com/__cypress/runner/cypress_runner.js:147128:12)\n    at https://demoqa.com/__cypress/runner/cypress_runner.js:146620:16\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (https://demoqa.com/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (https://demoqa.com/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (https://demoqa.com/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (https://demoqa.com/__cypress/runner/cypress_runner.js:8915:18)\n    at Promise._fulfill (https://demoqa.com/__cypress/runner/cypress_runner.js:8859:18)\n    at https://demoqa.com/__cypress/runner/cypress_runner.js:10473:46\nFrom Your Spec Code:\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\integration\\ui\\student-form\\register-student.spec.js:15:32)",
+                "diff": null
+              },
+              "uuid": "aa08e09d-f347-432c-8105-bd211b2ee920",
+              "parentUUID": "299040f4-78f3-48ed-9f6d-9584399da230",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "aa08e09d-f347-432c-8105-bd211b2ee920"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4524,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
