@@ -4,7 +4,7 @@ import { STATUS_CODE } from './api-constants'
 
 export const BookstoreHelper = {
   deleteAllBooks(userID, headers) {
-    let endpoint = BOOKSTORE_ENDPOINT.ENDPOINT_DELETE_ALL_BOOKS(userID)
+    let endPoint = BOOKSTORE_ENDPOINT.ENDPOINT_DELETE_ALL_BOOKS(userID)
     RequestHelper.sendDeleteRequest(endPoint, headers)
     cy.get('@response').then((res) => {
       expect(res.status).equal(STATUS_CODE.RESPONSE_CODE_SUCCESSFUL_NO_CONTENT)

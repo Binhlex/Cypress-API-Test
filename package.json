@@ -6,7 +6,8 @@
   "scripts": {
     "test_on_chrome": "npx cypress run --browser chrome .\\cypress\\integration\\features\\bookstore.feature",
     "test_on_electron": "./node_modules/.bin/cypress-tags run -e TAGS=\"@regression\"",
-    "tms_test": "npx cypress run --browser electron --spec .\\cypress\\integration\\api\\tms-api\\projects-api.spec.js"
+    "tms_test": "npx cypress run --browser electron --spec .\\cypress\\integration\\api\\tms-api\\projects-api.spec.js",
+    "bookstore_api_test": "npx cypress run --spec .\\cypress\\integration\\api\\bookstore-api\\*"
   },
   "author": "",
   "license": "ISC",
