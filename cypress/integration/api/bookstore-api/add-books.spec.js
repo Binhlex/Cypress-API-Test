@@ -42,7 +42,7 @@ describe('Add books tests', () => {
       userId: userId,
       collectionOfIsbns: [
         {
-          isbn: '11111111111',
+          isbn: '2222',
         },
       ],
     }
