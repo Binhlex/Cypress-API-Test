@@ -10,7 +10,7 @@
         "html": true,
         "json": true
     },
-  "env": {
+  "env": { 
     "userName": "binhle6",
     "password": "Binh@123456",
     "userId": "c1f70dca-fa15-4efe-8b5c-0f73a797599f",
